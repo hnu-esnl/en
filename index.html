@@ -11,97 +11,209 @@
         }
         
         /* Custom styles */
-        .profile-img { width: 200px; height: 200px; object-fit: cover; }
-        .section-title { color: var(--primary-color); }
-        .section-content { margin-bottom: 30px; }
+        .profile-img { 
+            width: 250px;  /* Adjust width */
+            height: 150px;  /* Adjust height */
+            object-fit: cover; 
+        }
+        .section-title { 
+            color: var(--primary-color); 
+        }
+        .section-content { 
+            margin-bottom: 30px; 
+        }
     </style>
 </head>
 <body>
-    <!-- Self Introduction -->
-    <header class="py-5 mt-5">
-        <div class="container text-center">
-            <h1 class="display-4">Professor Guoqi Xie</h1>
-            <p class="lead">Department of Computer Science | Professor</p>
-            <p class="section-content">
-                Professor Guoqi Xie, Ph.D. supervisor, currently serves as the Vice Dean of the School of Information Science and Engineering at Hunan University, Director of the Key Laboratory of Embedded and Network Computing in Hunan Province, and Secretary General of the Embedded Systems Committee of the Chinese Computer Federation (CCF). He is the founder of the ZVM project (a next-generation Type 1.5 real-time operating system virtualization solution). In recent years, he has published over 30 CCF A-class and ESI highly cited papers as the first or corresponding author, and published two books. He has been recognized as one of the top 2% of scientists globally, included in the "Lifetime Scientific Influence" list. He has also been appointed as an editorial board member for three embedded systems SCI journals, namely JSA, JCSC, and MICPRO.
-            </p>
-        </div>
-    </header>
+	<!-- Self Introduction -->
+	<header class="py-5 mt-5">
+		<div class="container">
+			<div class="row align-items-center">
+				<!-- Profile Photo on the left -->
+				<div class="col-md-4 text-center">
+					<img src="gqxie.jpg" alt="Professor Guoqi Xie's Photo" class="profile-img mb-4">
+				</div>
+				<!-- Personal Introduction on the right -->
+				<div class="col-md-8">
+					<h1 class="display-4">Guoqi Xie</h1>
+					<p class="lead">Department of Computer Science | Professor</p>
+					<p class="section-content">
+						Professor Guoqi Xie, Ph.D. supervisor, currently serves as the Vice Dean of the School of Information Science and Engineering at Hunan University, Director of the Key Laboratory of Embedded and Network Computing in Hunan Province, and Secretary General of the Embedded Systems Committee of the Chinese Computer Federation (CCF). He is the founder of the ZVM project (a next-generation Type 1.5 real-time operating system virtualization solution). In recent years, he has published over 30 CCF A-class and ESI highly cited papers as the first or corresponding author, and published two books. He has been recognized as one of the top 2% of scientists globally, included in the "Lifetime Scientific Influence" list. He has also been appointed as an editorial board member for three embedded systems SCI journals, namely JSA, JCSC, and MICPRO.
+					</p>
 
-    <!-- Profile Photo -->
-    <section class="py-5 text-center">
-        <div class="container">
-            <img src="gqxie.jpg" alt="Professor Guoqi Xie's Photo" class="profile-img rounded-circle mb-4">
-        </div>
-    </section>
+					<!-- Contact Information in two columns -->
+					<div class="row">
+						<div class="col-md-6">
+							<p><strong>Chinese Name:</strong> 谢国琪</p>
+							<p><strong>Degree:</strong> Ph.D.</p>
+							<p><strong>Email:</strong> xgqman@hnu.edu.cn; esnl@hnu.edu.cn</p>
+							<p><strong>Contact Address:</strong> Key Laboratory of Embedded and Network Computing, Hunan Province, Vehicle Network Intelligent Integration Technology Center</p>
+						</div>
+						<div class="col-md-6">
+							<p><strong>Title:</strong> Professor</p>
+							<p><strong>Research Interests:</strong> Embedded Computing Systems, Embedded Virtualization, Embedded AI, Fieldbuses (CAN, TSN), System Security</p>
+							<p><strong>Affiliation:</strong> Department of Computer Engineering, Hunan University, Faculty Member, College Leader</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
 
-    <!-- Education Background -->
-    <section class="py-5 bg-light" id="education">
+
+	<!-- Technical Sharing -->
+	<section class="py-5 bg-light" id="technical-sharing">
+		<div class="container">
+			<h2 class="section-title text-center">Technical Sharing</h2>
+			<div class="row">
+				<div class="col-12">
+					<div>
+						<a href="https://mp.weixin.qq.com/s/KZIBoS0RCGITjzgPCTpBfQ" target="_blank">★ TSN IP Core Porting Practice</a><br>
+						<a href="https://mp.weixin.qq.com/s/4jNlhvqAXbufFprM8-WITA" target="_blank">★ How to Write Zephyr RTOS Device Drivers</a><br>
+						<a href="https://mp.weixin.qq.com/s/agWDIRx5Fdq-PaiWBSc2Bw" target="_blank">★ Paddle Lite Adaptation to Jingjia Micro JM9230 GPU for AI Model Inference</a><br>
+						<a href="https://mp.weixin.qq.com/s/7hSZrGyd7V-X6k3ooWwWIQ" target="_blank">★ RK3568 with Zephyr RTOS as the Main Controller, Self-assembled Two-Wheel Self-Balancing Car</a><br>
+						<a href="https://mp.weixin.qq.com/s/wGJmwPFZDLir3D6fRMrukw" target="_blank">★ OpenHarmony for RKNN: Implementing Rockchip NPU Support and RKNN Model Inference on OpenHarmony</a><br>
+						<a href="https://mp.weixin.qq.com/s/JBSwl7kK6gias-5oQlGxAQ" target="_blank">★ TinyMaix on Zephyr: Deploying TinyMaix Inference Framework on Zephyr RTOS</a><br>
+						<a href="https://mp.weixin.qq.com/s/3X_2dGXu7lRlD_FjFajJBg" target="_blank">★ EtherCAT for Zephyr: Support for Industrial Ethernet EtherCAT on Zephyr RTOS and Implementation in ZVM Virtualized Environment</a><br>
+						<a href="https://mp.weixin.qq.com/s/fPMDTzZ0lyMhFTmM68QeRQ" target="_blank">★ Embedded Lab Paddle Lite on Zephyr RTOS Integrated into Paddle Lite Official Community</a><br>
+						<a href="https://mp.weixin.qq.com/s/2q7hbo54k0aBbZQvPryc5Q" target="_blank">★ Embedded Lab Zephyr RTOS on RK3568 Solution Merged into Zephyr Official Community</a><br>
+						<a href="https://mp.weixin.qq.com/s/IIJIHAsffxfgkwvz00V9fA" target="_blank">★ openEuler New Open Source Project: Introduction to Embedded Real-Time Virtual Machine ZVM</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Representative Papers -->
+	<section class="py-5" id="papers">
+		<div class="container">
+			<h2 class="section-title text-center">Representative Papers</h2>
+			<div class="row">
+				<div class="col-12">
+					<p>★ Yin Deng, <strong>Guoqi Xie</strong>, Chenglai Xiong, Sirong Zhao, Wei Ren, Kenli Li, “Zram Instance Pool Framework for Adaptive Memory Compression in Resource-Sensitive Embedded Operating Systems,” IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), DOI: 10.1109/TCAD.2025.3533300, 2025. (CCF A)</p>
+				</div>
+				<div class="col-12">
+					<p>★ Sirong Zhao, <strong>Guoqi Xie</strong>, Chenglai Xiong, Kenli Li, Xuejun Yu, Bo Wan, Yiwen Jiang, “AVL Function Table for LeafHooks Insertion with Obfuscated Control Flow Integrity,” IEEE Transactions on Computers (TC), DOI: 10.1109/TC.2024.3524080, 2024. (CCF A)</p>
+				</div>
+				
+				<div class="col-12">
+    <p>★ Sirong Zhao, <strong>Guoqi Xie</strong>, Wenhong Ma, Wei Ren, Kenli Li, “vmPTP: Precise Time Protocol for Inter-VM Communication in Embedded Virtualized Systems,” IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), DOI: 10.1109/TCAD.2024.3450411, 2024. (CCF A)</p>
+</div>
+<div class="col-12">
+    <p>★ Libing Deng, Gang Zeng, Ryo Kurachi, Fei Peng, Renfa Li, <strong>Guoqi Xie</strong>, “Design Synthesis and Optimization Strategy for Low Delay and High Bandwidth Utilization in Time-Sensitive Networking,” IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 44(1): 91 - 104, 2025. (CCF A)</p>
+</div>
+<div class="col-12">
+    <p>★ Wei Luo, <strong>Guoqi Xie</strong>, Yao Liu, Xiongren Xiao, Renfa Li., “Fast Game Verification for Safety- and Security-Critical Distributed Applications,” IEEE Transactions on Dependable and Secure Computing (TDSC), DOI：10.1109/TDSC.2024.3417022, 2024. (CCF A)</p>
+</div>
+<div class="col-12">
+    <p>★ Ruiqi Lu, <strong>Guoqi Xie</strong>, Renfa Li, Yan Liu, Xinzhong Liu, Wei Xu, Jianmei Lei, and Kenli Li, “Secure and Low-Delay CAN-FD Communication in Embedded Microcontroller: A Cooperative Swapping Approach,” IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 43(8): 2312 - 2325, 2024. (CCF A)</p>
+</div>
+<div class="col-12">
+    <p>★ Ruiqi Lu, <strong>Guoqi Xie</strong>, Renfa Li, Wei Xu, Jianmei Lei, “TrinitySec: Trinity-Enabled and Lightweight Security Framework for CAN-FD Communication,” IEEE Transactions on Dependable and Secure Computing (TDSC), 21(4): 2704 - 2719, 2024. (CCF A)</p>
+</div>
+<div class="col-12">
+    <p>★ Wenhong Ma, <strong>Guoqi Xie</strong>, Renfa Li, Wanli Chang, “Optimality-guaranteed Design Space Pruning for CAN-FD Frame Packing,” IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), DOI: 43(1):44 - 56, 2024. (CCF A)</p>
+</div>
+<div class="col-12">
+    <p>★ Lei Yang, Yuwei Liao, Xin Cheng, Mengyuan Xia, <strong>Guoqi Xie</strong>, “Efficient Edge Data Management Framework for IIoT via Prediction-based Data Reduction,” IEEE Transactions on Parallel and Distributed Systems (TPDS), 34(12): 3309 - 3322, 2023. (CCF A)</p>
+</div>
+<div class="col-12">
+    <p>★ Lei Yang, Can Zheng, Xiaoyuan Shen, <strong>Guoqi Xie</strong>, “OfpCNN: On-Demand Fine-Grained Partitioning for CNN Inference Acceleration in Heterogeneous Devices,” IEEE Transactions on Parallel and Distributed Systems (TPDS), 34(12): 3090 - 3013, 2023. (CCF A)</p>
+</div>
+<div class="col-12">
+    <p>★ Zonghong Li, <strong>Guoqi Xie</strong>, Wenhong Ma, Xiongren Xiao, Yong Xie, Wei Ren, Wanli Chang, “RTISM: Real-Time Inter-VM Communication based on Shared Memory for Mixed-Criticality Flows,” 44th IEEE Real-Time Systems Symposium (RTSS), 2023. (CCF A)</p>
+</div>
+<div class="col-12">
+    <p>★ Wenhong Ma, Xiaoyi Huang, Renfa Li, Yunfei Zhang, <strong>Guoqi Xie</strong>, Wanli Chang, “Brief Industry Paper: Response Time Evaluation of Cross-Domain Communication in CAN-FD and TSN,” 44th IEEE Real-Time Systems Symposium (RTSS), 2023. (CCF A)</p>
+</div>
+
+				<div class="col-12">
+    <p>★ <strong>Guoqi Xie</strong>, Yao Zhang, Nan Chen, Wanli Chang, “A High-Flexibility CAN-TSN Gateway with a Low-Congestion TSN-to-CAN Scheduler,” IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 42(12): 5072 - 5083, 2023.（CCF A）</p>
+</div>
+<div class="col-12">
+    <p>★ Wenhong Ma, Xiangzhen Xiao, <strong>Guoqi Xie</strong>, Nan Guan, Yu Jiang, Wanli Chang, “Fault Tolerance in Time-Sensitive Networking with Mixed-Critical Traffic,” 60th ACM/IEEE Design Automation Conference (DAC), 2023. （CCF A）</p>
+</div>
+<div class="col-12">
+    <p>★ <strong>Guoqi Xie</strong>, Chenglai Xiong, Wei Wu, Renfa Li, Wanli Chang, “Holistic WCRT Analysis for Global Fixed-Priority Preemptive Multiprocessor Scheduling,” 60th ACM/IEEE Design Automation Conference (DAC), 2023. （CCF A）</p>
+</div>
+<div class="col-12">
+    <p>★ Yehua Wei, Can Cheng, <strong>Guoqi Xie</strong>, “Online Learning-Enabled and Fingerprint-Based Intrusion Detection System in Controller Area Networks,” IEEE Transactions on Dependable and Secure Computing (TDSC), 20(6): 4607 - 4620, Nov. 2023. （CCF A）</p>
+</div>
+<div class="col-12">
+    <p>★ <strong>Guoqi Xie</strong>, Wei Wu, Renfa Li, “Carry-out Interference Optimization in WCRT Analysis for Global Fixed-Priority Multiprocessor Scheduling,” IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 41 (3): 478 - 491, 2022. （CCF A）</p>
+</div>
+<div class="col-12">
+    <p>★ <strong>Guoqi Xie</strong>, Debayan Roy, Yawen Zhang, Renfa Li, Wanli Chang, “Obfuscated Priority Assignment to CAN-FD Messages with Dependencies: A Swapping-based and Affix-Matching Approach,” 58th ACM/IEEE Design Automation Conference (DAC), 427 - 432, 2021. （CCF A）</p>
+</div>
+<div class="col-12">
+    <p>★ <strong>Guoqi Xie</strong>, Kehua Yang, Haibo Luo, Renfa Li, Shiyan Hu, “Reliability and Confidentiality Co-Verification for Parallel Applications in Distributed Systems,” IEEE Transactions on Parallel and Distributed Systems (TPDS), 32 (6): 1353 - 1368, 2021. （CCF A）</p>
+</div>
+<div class="col-12">
+    <p>★ <strong>Guoqi Xie</strong>, Gang Zeng, Renfa Li, “Safety Enhancement for Real-Time Parallel Applications in Distributed Automotive Embedded Systems: A Stable Stopping Approach,” IEEE Transactions on Parallel and Distributed Systems (TPDS), 31(9): 2382-2392, 2020. （CCF A）</p>
+</div>
+<div class="col-12">
+    <p>★ <strong>Guoqi Xie</strong>, Haijie Gong, Yunbo Han, Samarjit Chakraborty, Wanli Chang, “A Real-Time CAN-CAN Gateway with Tight Latency Analysis and Targeted Priority Assignment,” 41st IEEE Real-Time Systems Symposium (RTSS), 141- 152, 2020. （CCF A）</p>
+</div>
+<div class="col-12">
+    <p>★ <strong>Guoqi Xie</strong>, Renfa Li, Shiyan Hu, “Security-Aware Obfuscated Priority Assignment for CAN FD Messages in Real-Time Parallel Automotive Applications,” IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 39(12): 4413-4425, 2020. （CCF A）</p>
+</div>
+<div class="col-12">
+    <p>★ <strong>Guoqi Xie</strong>, Gang Zeng, Yuekun Chen, Yang Bai, Zhili Zhou, Renfa Li, Keqin Li, “Minimizing Redundancy to Satisfy Reliability Requirement for a Parallel Application on Heterogeneous Service-Oriented Systems,” IEEE Transactions on Services Computing (TSC), 13 (5): 871 - 886, 2020.（ESI Highly Cited，CCF A）</p>
+</div>
+
+				<div class="col-12">
+    <p>★ <strong>Guoqi Xie</strong>, Jing Huang, Yan Liu, Renfa Li, Keqin Li, “System-Level Energy-Aware Design Methodology Towards End-To-End Response Time Optimization,” IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), DOI: 10.1109/TCAD.2019.2921350, 2019. （CCF A）</p>
+</div>
+<div class="col-12">
+    <p>★ <strong>Guoqi Xie</strong>, Gang Zeng, Ryo Kurachi, Hiroaki Takada, Zhetao Li, Renfa Li, Keqin Li, “WCRT Analysis and Evaluation for Sporadic Message-Processing Tasks in Multicore Automotive Gateways,” IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 38(2): 281-294, 2019. （CCF A）</p>
+</div>
+<div class="col-12">
+    <p>★ <strong>Guoqi Xie</strong>, Wenhong Ma, Hao Peng, Renfa Li, Keqin Li, “Price Performance-Driven Hardware Cost Optimization under Functional Safety Requirement in Large-Scale Heterogeneous Distributed Embedded Systems,” IEEE Transactions on Industrial Electronics (TIE), 68 (5): 4485 - 4497, 2021.（ESI Highly Cited）</p>
+</div>
+<div class="col-12">
+    <p>★ <strong>Guoqi Xie</strong>, Gang Zeng, Yan Liu, Jia Zhou, Renfa Li, Keqin Li, “Fast Functional Safety Verification for Distributed Automotive Applications During Early Design Phase,” IEEE Transactions on Industrial Electronics (TIE), 65(5): 4378 - 4391, 2018.（ESI Highly Cited）</p>
+</div>
+<div class="col-12">
+    <p>★ <strong>Guoqi Xie</strong>, Gang Zeng, Renfa Li, Keqin Li, “Quantitative Fault-Tolerance for Reliable Workflows on Heterogeneous IaaS Clouds,” IEEE Transactions on Cloud Computing (TCC), 8(4): 1223-1236, 2020.（ESI Highly Cited）</p>
+</div>
+<div class="col-12">
+    <p>★ Libing Deng, <strong>Guoqi Xie</strong>, Hong Liu, Yunbo Han, Renfa Li, Keqin Li “A Survey of Real-Time Ethernet Modeling and Design Methodologies: from AVB to TSN,” ACM Computing Surveys (CSUR), 55(2), No. 31: 1–36, 2023.（ESI Highly Cited）</p>
+</div>
+<div class="col-12">
+    <p>★ <strong>Guoqi Xie</strong>, Yawen Zhang, Renfa Li, Kenli Li, Keqin Li, “Functional Safety for Embedded Systems,” CRC Press, DOI:10.1201/9781003391517, 182 pages, 2023.（Monograph）</p>
+</div>
+<div class="col-12">
+    <p>★ <strong>Guoqi Xie</strong>, Gang Zeng, Renfa Li, Keqin Li, “Scheduling Parallel Applications on Heterogeneous Distributed Systems,” Springer Publishing, DOI:10.1007/978-981-13-6557-7, 246 pages, 2019.（Monograph）</p>
+</div>
+
+
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Editorial Board -->
+    <section class="py-5 bg-light" id="Board">
         <div class="container">
-            <h2 class="section-title text-center">Education Background</h2>
+            <h2 class="section-title text-center">Editorial Board</h2>
             <div class="row">
-                <div class="col-12">
-                    <h4>Ph.D. in Computer Science</h4>
-                    <p class="text-muted">2010 - 2013 | XX University</p>
-                    <p>Studied for a Ph.D. in Computer Science at XX University, specializing in Artificial Intelligence and Machine Learning.</p>
-                </div>
-                <div class="col-12">
-                    <h4>Master's in Computer Networks</h4>
-                    <p class="text-muted">2007 - 2010 | XX University</p>
-                    <p>Pursued a Master's degree in Computer Networks, focusing on network security and protocols.</p>
-                </div>
+              <div class="col-12">
+    <h3>Editorial Board</h3>
+    <p>★ Associate Editor, <a href="https://www.sciencedirect.com/journal/journal-of-systems-architecture" target="_blank">Journal of Systems Architecture - Embedded Software Design (JSA)</a></p>
+    <p>★ Associate Editor, <a href="https://www.sciencedirect.com/journal/microprocessors-and-microsystems" target="_blank">Microprocessors and Microsystems - Embedded Hardware Design (MICPRO)</a></p>
+    <p>★ Associate Editor, <a href="https://www.worldscientific.com/worldscinet/jcsc" target="_blank">Journal of Circuits, Systems and Computers (JCSC)</a></p>
+</div>
             </div>
         </div>
     </section>
 
-    <!-- Published Papers -->
-    <section class="py-5" id="papers">
-        <div class="container">
-            <h2 class="section-title text-center">Published Papers</h2>
-            <div class="row">
-                <div class="col-12">
-                    <h4>"Zram Instance Pool Framework for Adaptive Memory Compression in Resource-Sensitive Embedded Operating Systems"</h4>
-                    <p class="text-muted">Published: 2025 | Journal: IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD)</p>
-                    <p>This paper discusses Zram Instance Pool, an adaptive memory compression technique for embedded operating systems with limited resources.</p>
-                </div>
-                <div class="col-12">
-                    <h4>"AVL Function Table for LeafHooks Insertion with Obfuscated Control Flow Integrity"</h4>
-                    <p class="text-muted">Published: 2024 | Journal: IEEE Transactions on Computers (TC)</p>
-                    <p>Explores the use of AVL function tables for ensuring control flow integrity in embedded systems through obfuscation techniques.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Research Projects -->
-    <section class="py-5 bg-light" id="projects">
-        <div class="container">
-            <h2 class="section-title text-center">Research Projects</h2>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Intelligent Transportation System Research</h5>
-                            <p class="card-text">This project focuses on enhancing the management capabilities of transportation systems using machine learning.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">Big Data-based Network Security System</h5>
-                            <p class="card-text">Research on utilizing big data analytics to enhance network security and reduce risks from cyberattacks.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Footer -->
     <footer class="py-4 bg-dark text-white">
         <div class="container text-center">
-            <p>&copy; 2023 Professor Guoqi Xie. All rights reserved.</p>
+            <p>&copy; 2025 Professor Guoqi Xie. All rights reserved.</p>
         </div>
     </footer>
 
